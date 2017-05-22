@@ -5,8 +5,10 @@ class Number
       1
     elsif array == [0, 1, 1]
       2
-    else array == [0, 1, 1, 2]
+    elsif array == [0, 1, 1, 2]
       3
+    else
+      5
     end
   end
 

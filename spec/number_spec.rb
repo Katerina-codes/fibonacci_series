@@ -17,5 +17,9 @@ describe Number do
     expect(number.next_number([0, 1, 1, 2])).to eq(3)
   end
 
+  it "returns 5 if previous 2 number are 2, 3" do
+    number = Number.new
+    expect(number.next_number([0, 1, 1, 2, 3])).to eq(5)
+  end
 
 end
