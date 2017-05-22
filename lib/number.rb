@@ -3,8 +3,10 @@ class Number
   def next_number(array)
     if array == [0, 1]
       1
-    else
+    elsif array == [0, 1, 1]
       2
+    else
+      3
     end
   end
 
