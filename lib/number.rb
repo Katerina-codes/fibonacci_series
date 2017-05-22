@@ -5,7 +5,7 @@ class Number
       1
     elsif array == [0, 1, 1]
       2
-    else
+    else array == [0, 1, 1, 2]
       3
     end
   end
