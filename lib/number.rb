@@ -9,8 +9,10 @@ class Number
   def fibonacci(number)
     if number == 0
       [0]
-    else
+    elsif number == 1
       [0, 1]
+    else
+      [0, 1, 1]
     end
   end
 

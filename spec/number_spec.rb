@@ -32,4 +32,9 @@ describe Number do
     expect(number.fibonacci(1)).to eq([0, 1])
   end
 
+  it "returns the number sequence if 2 is entered" do
+    number = Number.new
+    expect(number.fibonacci(2)).to eq([0, 1, 1])
+  end
+
 end
