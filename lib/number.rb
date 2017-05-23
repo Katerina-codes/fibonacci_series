@@ -7,14 +7,20 @@ class Number
   end
 
   def fibonacci(number)
+    array = [0, 1]
+
     if number == 0
       [0]
     elsif number == 1
-      [0, 1]
-    elsif number == 2
-      [0, 1, 1]
+      array
     else
-      [0, 1, 1, 2]
+      number = number + 1
+      until array.length == number
+      next_number = array[-1] + array[-2]
+      array.push(next_number)
+      array.length
+      end
+    array
     end
   end
 

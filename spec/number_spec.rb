@@ -12,12 +12,12 @@ describe Number do
     expect(number.next_number([0, 1, 1])).to eq(2)
   end
 
-  it "returns 3 if previous 2 number are 1, 2" do
+  it "returns 3 if previous 2 numbers are 1, 2" do
     number = Number.new
     expect(number.next_number([0, 1, 1, 2])).to eq(3)
   end
 
-  it "returns 5 if previous 2 number are 2, 3" do
+  it "returns 5 if previous 2 numbers are 2, 3" do
     number = Number.new
     expect(number.next_number([0, 1, 1, 2, 3])).to eq(5)
   end
@@ -37,9 +37,14 @@ describe Number do
     expect(number.fibonacci(2)).to eq([0, 1, 1])
   end
 
-  it "returns the number sequence if 2 is entered" do
+  it "returns the number sequence if 3 is entered" do
     number = Number.new
     expect(number.fibonacci(3)).to eq([0, 1, 1, 2])
+  end
+
+  it "returns the number sequence if 6 is entered" do
+    number = Number.new
+    expect(number.fibonacci(6)).to eq([0, 1, 1, 2, 3, 5, 8])
   end
 
 end
