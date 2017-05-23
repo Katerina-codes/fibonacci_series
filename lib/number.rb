@@ -11,8 +11,10 @@ class Number
       [0]
     elsif number == 1
       [0, 1]
-    else
+    elsif number == 2
       [0, 1, 1]
+    else
+      [0, 1, 1, 2]
     end
   end
 
