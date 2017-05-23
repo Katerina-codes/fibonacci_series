@@ -22,4 +22,9 @@ describe Number do
     expect(number.next_number([0, 1, 1, 2, 3])).to eq(5)
   end
 
+  it "returns the number sequence for whatever number is called" do
+    number = Number.new
+    expect(number.fibonacci(0)).to eq(0)
+  end
+
 end

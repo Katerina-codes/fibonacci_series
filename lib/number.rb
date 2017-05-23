@@ -6,4 +6,8 @@ class Number
     next_number
   end
 
+  def fibonacci(number)
+    0
+  end
+
 end
